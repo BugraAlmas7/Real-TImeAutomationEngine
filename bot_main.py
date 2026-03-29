@@ -37,8 +37,8 @@ class BotApp(ctk.CTk):
         self.drivers = []
 
         try:
-            if os.path.exists("Ace-of-Spades-PNG.png"):
-                bg_image_data = Image.open("Ace-of-Spades-PNG.png")
+            if os.path.exists("logo.png"):
+                bg_image_data = Image.open("logo.png")
                 bg_image_resized = bg_image_data.resize((700, 1100), Image.LANCZOS)
                 self.bg_image = ctk.CTkImage(light_image=bg_image_resized, dark_image=bg_image_resized, size=(700, 1100))
                 self.bg_label = ctk.CTkLabel(self, image=self.bg_image, text="")
